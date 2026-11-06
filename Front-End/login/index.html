@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - S.A. Esquadrias de Alumínios</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <main class="login-container">
+
+        <!-- Lado esquerdo -->
+        <section class="branding">
+
+            <div class="branding-content">
+                <h1>
+                    S.A<br>
+                    Esquadrias de<br>
+                    Aluminios
+                </h1>
+
+                <div class="branding-line"></div>
+
+                <p>
+                    Qualidade e seguranca<br>
+                    para o seu projeto
+                </p>
+            </div>
+
+        </section>
+
+        <!-- Lado direito -->
+        <section class="login-area">
+
+            <div class="login-box">
+
+                <div class="login-header">
+                    <h2>Bem-Vindo <span>de Volta!</span></h2>
+                    <p>Entre com suas credenciais para continuar.</p>
+                </div>
+
+                <form class="login-form">
+
+                    <!-- Usuario -->
+                    <div class="input-group">
+
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M20 21V19C20 16.79 18.21 15 16 15H8C5.79 15 4 16.79 4 19V21"
+                                stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round"/>
+
+                            <circle cx="12" cy="7" r="4"
+                                stroke="currentColor" stroke-width="1.8"/>
+                        </svg>
+
+                        <input
+                            type="text"
+                            id="usuario"
+                            name="usuario"
+                            placeholder="Usuario"
+                            required
+                        >
+
+                    </div>
+
+                    <!-- Senha -->
+                    <div class="input-group">
+
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <rect x="4" y="10" width="16" height="12" rx="2"
+                                stroke="currentColor" stroke-width="1.8"/>
+
+                            <path d="M7 10V7C7 4.24 9.24 2 12 2C14.76 2 17 4.24 17 7V10"
+                                stroke="currentColor" stroke-width="1.8"
+                                stroke-linecap="round"/>
+
+                            <circle cx="12" cy="16" r="1.5"
+                                fill="currentColor"/>
+                        </svg>
+
+                        <input
+                            type="password"
+                            id="senha"
+                            name="senha"
+                            placeholder="Senha"
+                            required
+                        >
+
+                        <button type="button" class="toggle-password" aria-label="Mostrar senha">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M2 12S5.5 5 12 5S22 12 22 12S18.5 19 12 19S2 12 2 12Z"
+                                    stroke="currentColor" stroke-width="1.5"/>
+
+                                <circle cx="12" cy="12" r="3"
+                                    stroke="currentColor" stroke-width="1.5"/>
+                            </svg>
+                        </button>
+
+                    </div>
+
+                    <!-- Entrar -->
+                    <button type="submit" class="btn-login">
+                        <span>Entrar</span>
+
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                </form>
+
+                <!-- Links inferiores -->
+                <div class="login-footer">
+
+                    <p>
+                        Nao tem conta?
+                        <a href="#">Cadastre-se</a>
+                    </p>
+
+                    <a href="#" class="forgot-password">
+                        Esqueceu sua senha?
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Botao de ajuda -->
+    <button class="help-button" title="Ajuda">?</button>
+
+</body>
+</html>
