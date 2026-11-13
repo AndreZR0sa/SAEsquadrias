@@ -1,145 +1,209 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#05132C">
-  <title>Dashboard Geral | S.A. Esquadrias</title>
-  <link rel="stylesheet" href="dashboard.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Geral | S.A. Esquadrias</title>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="sidebar" id="sidebar">
-      <a class="brand" href="index.html" aria-label="S.A. Esquadrias - Dashboard">
-        <span class="brand-mark">S.A.</span>
-        <span class="brand-copy"><strong>S.A. Esquadrias</strong><small>de Alumínios</small></span>
-      </a>
 
-      <div class="nav-label">MENU PRINCIPAL</div>
-      <nav class="main-nav" aria-label="Navegação principal">
-        <a class="nav-link active" href="index.html">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="5" rx="1.5"/><rect x="13" y="10" width="8" height="11" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/></svg>
-          <span>Dashboard Geral</span>
-        </a>
-        <a class="nav-link" href="orcamentos.html">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3.5h7l4 4V20a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4.5a1 1 0 0 1 1-1Z"/><path d="M14 3.5V8h4M9 12h6M9 16h6"/></svg>
-          <span>Orçamentos Técnicos</span>
-        </a>
-        <a class="nav-link" href="prazos-fabrica.html">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V8l9-5 9 5v13M7 21v-7h10v7M8 9h.01M12 9h.01M16 9h.01"/></svg>
-          <span>Controle de Prazos &amp; Fábrica</span>
-        </a>
-        <a class="nav-link" href="instalacoes.html">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.2"/></svg>
-          <span>Instalações &amp; Campo</span>
-        </a>
-        <a class="nav-link" href="vendedores-clientes.html">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20v-1.5A4.5 4.5 0 0 1 7.5 14h3a4.5 4.5 0 0 1 4.5 4.5V20M16 5.2a3.2 3.2 0 0 1 0 6.2M17 14.2a4.5 4.5 0 0 1 4 4.4V20"/></svg>
-          <span>Vendedores &amp; Clientes</span>
-        </a>
-      </nav>
+<div class="app">
 
-      <div class="sidebar-bottom">
-        <div class="sidebar-divider"></div>
-        <div class="user-mini">
-          <div class="avatar">AD</div>
-          <div class="user-mini-copy"><strong>Administrador</strong><small>Gestor do sistema</small></div>
-          <span class="online-dot"></span>
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">▤</span>
+            <span>
+                <b>S.A. ESQUADRIAS</b>
+                <small>ALUMÍNIO & GLAZING</small>
+            </span>
+        </a>
+
+        <div class="nav-caption">OPERAÇÕES ESTRUTURAIS</div>
+
+        <nav>
+            <a href="../dashboard/dashboard.html" class="nav-link active">
+                <i>📊</i> Dashboard Geral
+            </a>
+            <a href="../orçamento/orcamento.html" class="nav-link">
+                <i>📑</i> Orçamentos Técnicos
+            </a>
+            <a href="../Prazos-Fabricas/prazo.html" class="nav-link">
+                <i>⚙️</i> Controle de Prazos & Fábrica
+            </a>
+            <a href="../Instalações/instalacao.html" class="nav-link">
+                <i>📍</i> Instalações & Campo
+            </a>
+            <a href="../Clientes/cliente.html" class="nav-link">
+                <i>👥 </i> Clientes
+            </a>
+             <a href="../Funcionario/Funcionario.html" class="nav-link">
+                <i>🪪</i> Funcionários
+            </a>
+        </nav>
+
+        <div class="sidebar-user">
+            <span class="avatar">👤</span>
+            <div class="user-info">
+                <b>Roberto Alencar</b>
+                <small>RH / Operações</small>
+            </div>
+            <button class="logout-btn" aria-label="Sair">→</button>
         </div>
-      </div>
+
     </aside>
 
-    <main class="main-area">
-      <header class="topbar">
-        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-        <div class="breadcrumb"><span>S.A. ESQUADRIAS</span><i>/</i><strong>Visão geral</strong></div>
-        <div class="topbar-right">
-          <span class="system-status"><span></span> Sistema operacional</span>
-          <button class="icon-button" aria-label="Notificações" title="Notificações">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 9a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg>
-            <b class="notification-dot"></b>
-          </button>
-          <div class="top-user"><div class="avatar">AD</div><div><strong>Administrador</strong><small>Administração</small></div><span class="chevron">⌄</span></div>
-        </div>
-      </header>
+    <main class="main">
 
-      <div class="content">
-        <section class="page-heading">
-          <div>
-            <div class="eyebrow">PAINEL DE CONTROLE</div>
-            <h1>Dashboard <span>Geral</span></h1>
-            <p>Acompanhe os indicadores e o andamento da sua operação.</p>
-          </div>
-          <button class="export-button" type="button" aria-label="Exportar relatório (visual)">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 17v3h16v-3"/></svg>
-            Exportar relatório
-          </button>
+        <header class="topbar">
+            <span>SISTEMA INTEGRADO DE ENGENHARIA & PRODUÇÃO</span>
+
+            <div class="top-actions">
+                <button class="notif-btn" aria-label="Notificações">
+                    🔔<span class="notif-dot"></span>
+                </button>
+                <span class="avatar">👤</span>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <div class="page-header-row">
+                <div class="page-heading">
+                    <span class="breadcrumb">Início</span>
+                    <h1>Dashboard Geral</h1>
+                    <p>ACOMPANHE OS PROJETOS E AS OPERAÇÕES EM UM SÓ LUGAR</p>
+                </div>
+
+                <button class="btn-export">⬇ Exportar relatório</button>
+            </div>
+
+            <div class="kpi-grid">
+                <article class="kpi-card">
+                    <div class="kpi-icon blue">🏢</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">PROJETOS ATIVOS</span>
+                        <strong class="kpi-value">18</strong>
+                        <span class="kpi-sub">em andamento</span>
+                    </div>
+                </article>
+
+                <article class="kpi-card">
+                    <div class="kpi-icon cyan">🕒</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">ENTREGAS NO PRAZO</span>
+                        <strong class="kpi-value">92%</strong>
+                        <span class="kpi-sub"><b class="trend-up">↑ 4%</b> vs. mês anterior</span>
+                    </div>
+                </article>
+
+                <article class="kpi-card">
+                    <div class="kpi-icon amber">⚠</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">PEDIDOS EM ATRASO</span>
+                        <strong class="kpi-value">04</strong>
+                        <span class="kpi-sub">2 exigem atenção</span>
+                    </div>
+                </article>
+            </div>
+
+            <section class="list-panel">
+
+                <div class="panel-heading">
+                    <h2><span>▤</span> Ordens de Produção & Prazos</h2>
+                    <small><i></i> 18 pedidos ativos</small>
+                </div>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nº PEDIDO</th>
+                                <th>CLIENTE / EMPREENDIMENTO</th>
+                                <th>PROJETO</th>
+                                <th>PRAZO DE ENTREGA</th>
+                                <th>ETAPA FABRIL</th>
+                                <th>STATUS</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>PED-0482</td>
+                                <td><b>Habitarte S.A.</b><small>Ed. Mirante Sul</small></td>
+                                <td>Residencial Luxo</td>
+                                <td>15/04/2025</td>
+                                <td>Corte CNC</td>
+                                <td><em>No prazo</em></td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td>PED-0481</td>
+                                <td><b>Mansão Alphaville 12</b><small>Residencial Unifamiliar</small></td>
+                                <td>Alto Padrão</td>
+                                <td>12/04/2025</td>
+                                <td>Usinagem</td>
+                                <td><em>No prazo</em></td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td>PED-0480</td>
+                                <td><b>Lumina Hotéis & Resort</b><small>Torre Atlântico</small></td>
+                                <td>Hotelaria / Glazing</td>
+                                <td>10/04/2025</td>
+                                <td>Montagem</td>
+                                <td><em class="done">Concluído</em></td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td>PED-0479</td>
+                                <td><b>Vectra Incorporadora</b><small>Comercial Prime</small></td>
+                                <td>Corporativo Triplo A</td>
+                                <td>08/04/2025</td>
+                                <td>Expedição</td>
+                                <td><em class="late">Atrasado</em></td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td>PED-0478</td>
+                                <td><b>ArqStudio Arquitetura</b><small>Casa Jardins</small></td>
+                                <td>Residencial Boutique</td>
+                                <td>05/04/2025</td>
+                                <td>Corte CNC</td>
+                                <td><em>Em produção</em></td>
+                                <td class="arrow">›</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="panel-footer">
+                    <span class="footer-alert"><i class="dot-amber"></i> 2 pedidos requerem atenção aos prazos nesta semana</span>
+                    <a href="prazos-fabrica.html" class="footer-link">Ver todos os 66 pedidos →</a>
+                </div>
+
+            </section>
+
+            <footer class="page-bottom-bar">
+                <div class="bottom-left">
+                    <span><b class="trend-up">↑</b> Meta semanal de produção: 24 pedidos</span>
+                    <span>Etapas atualizadas pela equipe da fábrica</span>
+                </div>
+                <div class="bottom-right">
+                    <span class="sync-status"><i class="dot-green"></i> Sincronizado com PCP</span>
+                    <small>v2.4.8 · build</small>
+                </div>
+            </footer>
+
         </section>
 
-        <section class="metrics-grid" aria-label="Indicadores principais">
-          <article class="metric-card">
-            <div class="metric-top"><span class="metric-icon cyan"><svg viewBox="0 0 24 24"><path d="M3 20V7l9-4 9 4v13M7 20v-7h10v7M8 9h.01M12 9h.01M16 9h.01"/></svg></span><span class="metric-tag">EM ANDAMENTO</span></div>
-            <div class="metric-value">24</div>
-            <div class="metric-label">Projetos ativos</div>
-            <div class="metric-foot"><span class="trend up">↗ 12%</span><span>em relação ao mês passado</span></div>
-          </article>
-          <article class="metric-card">
-            <div class="metric-top"><span class="metric-icon green"><svg viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/><circle cx="12" cy="12" r="9"/></svg></span><span class="metric-tag">DESEMPENHO</span></div>
-            <div class="metric-value">92<span class="value-unit">%</span></div>
-            <div class="metric-label">Entregas no prazo</div>
-            <div class="metric-foot"><span class="trend up">↗ 5%</span><span>em relação ao mês passado</span></div>
-          </article>
-          <article class="metric-card">
-            <div class="metric-top"><span class="metric-icon orange"><svg viewBox="0 0 24 24"><path d="M12 3 2.8 19h18.4L12 3Z"/><path d="M12 9v4m0 3h.01"/></svg></span><span class="metric-tag">ATENÇÃO</span></div>
-            <div class="metric-value">03</div>
-            <div class="metric-label">Pedidos em atraso</div>
-            <div class="metric-foot"><span class="trend down">Acompanhar</span><span>pedidos precisam de atenção</span></div>
-          </article>
-        </section>
-
-        <section class="production-panel">
-          <div class="panel-heading">
-            <div><h2>Acompanhamento da produção</h2><p>Visão dos pedidos e suas etapas atuais.</p></div>
-            <a class="text-link" href="prazos-fabrica.html">Ver todos <span>→</span></a>
-          </div>
-          <div class="table-wrap">
-            <table>
-              <thead><tr><th>Nº DO PEDIDO</th><th>CLIENTE / EMPREENDIMENTO</th><th>PROJETO</th><th>PRAZO DE ENTREGA</th><th>ETAPA FABRIL</th><th>STATUS</th><th></th></tr></thead>
-              <tbody>
-                <tr><td><span class="order-id">#SA-2026-024</span></td><td><strong>Residencial Alameda</strong><small>Marcos Oliveira</small></td><td>Janelas linha Gold</td><td>12 Nov, 2026</td><td><div class="stage"><span class="stage-track"><i style="width:78%"></i></span><small>78%</small></div></td><td><span class="status status-progress">Em produção</span></td><td><a class="row-action" href="prazos-fabrica.html" aria-label="Ver pedido">↗</a></td></tr>
-                <tr><td><span class="order-id">#SA-2026-023</span></td><td><strong>Edifício Horizonte</strong><small>Construtora Nova Era</small></td><td>Fachada glazing</td><td>15 Nov, 2026</td><td><div class="stage"><span class="stage-track"><i style="width:52%"></i></span><small>52%</small></div></td><td><span class="status status-progress">Em produção</span></td><td><a class="row-action" href="prazos-fabrica.html" aria-label="Ver pedido">↗</a></td></tr>
-                <tr><td><span class="order-id">#SA-2026-022</span></td><td><strong>Casa Jardim Sul</strong><small>Fernanda Costa</small></td><td>Portas e janelas</td><td>08 Nov, 2026</td><td><div class="stage"><span class="stage-track overdue"><i style="width:34%"></i></span><small>34%</small></div></td><td><span class="status status-late">Em atraso</span></td><td><a class="row-action" href="prazos-fabrica.html" aria-label="Ver pedido">↗</a></td></tr>
-                <tr><td><span class="order-id">#SA-2026-021</span></td><td><strong>Clínica São Lucas</strong><small>Grupo São Lucas</small></td><td>Esquadrias especiais</td><td>20 Nov, 2026</td><td><div class="stage"><span class="stage-track"><i style="width:18%"></i></span><small>18%</small></div></td><td><span class="status status-wait">Aguardando</span></td><td><a class="row-action" href="prazos-fabrica.html" aria-label="Ver pedido">↗</a></td></tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="table-mobile-note">Deslize horizontalmente para visualizar todas as colunas.</div>
-        </section>
-
-        <section class="bottom-grid">
-          <article class="info-card">
-            <div class="info-card-title"><span class="small-icon cyan"><svg viewBox="0 0 24 24"><path d="M12 3 2.8 19h18.4L12 3Z"/><path d="M12 9v4m0 3h.01"/></svg></span><h3>Avisos importantes</h3></div>
-            <div class="notice-row"><span class="notice-bullet warning"></span><p><strong>3 pedidos em atraso</strong><small>Verifique os prazos de entrega pendentes.</small></p><a href="prazos-fabrica.html">Ver</a></div>
-            <div class="notice-row"><span class="notice-bullet info"></span><p><strong>2 instalações próximas</strong><small>Há serviços programados para esta semana.</small></p><a href="instalacoes.html">Ver</a></div>
-          </article>
-          <article class="info-card weekly-card">
-            <div class="weekly-heading"><div><h3>Meta semanal de produção</h3><p>Peças concluídas nesta semana</p></div><strong>78<span>%</span></strong></div>
-            <div class="progress-large"><span></span></div>
-            <div class="weekly-foot"><span>156 de 200 peças</span><span>Meta: 200 peças</span></div>
-          </article>
-          <article class="sync-card">
-            <span class="sync-icon"><svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5.6 9A7 7 0 0 1 18 6l2 6M4 12l2 6a7 7 0 0 0 12.4-3"/></svg></span>
-            <div><strong>Sincronização PCP</strong><p><span></span> Última atualização: hoje, 14:32</p></div>
-            <span class="sync-check">✓</span>
-          </article>
-        </section>
-        <footer class="page-footer"><span>© 2026 S.A. Esquadrias de Alumínios</span><span>Gestão integrada <b>•</b> Controle e eficiência</span></footer>
-      </div>
     </main>
-  </div>
-  <div class="sidebar-overlay" id="sidebarOverlay"></div>
-  <script src="assets/js/app.js"></script>
+
+</div>
+
 </body>
 </html>
+
+

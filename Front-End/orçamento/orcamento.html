@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamentos Técnicos | S.A. Esquadrias</title>
+    <link rel="stylesheet" href="orcamento.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">▤</span>
+            <span>
+                <b>S.A. ESQUADRIAS</b>
+                <small>ALUMÍNIO & GLAZING</small>
+            </span>
+        </a>
+
+        <div class="nav-caption">OPERAÇÕES ESTRUTURAIS</div>
+
+        <nav>
+             <a href="../dashboard/dashboard.html" class="nav-link">
+                <i>📊</i> Dashboard Geral
+            </a>
+            <a href="../orçamento/orcamento.html" class="nav-link active">
+                <i>📑</i> Orçamentos Técnicos
+            </a>
+            <a href="../Prazos-Fabricas/prazo.html" class="nav-link">
+                <i>⚙️</i> Controle de Prazos & Fábrica
+            </a>
+            <a href="../Instalações/instalacao.html" class="nav-link">
+                <i>📍</i> Instalações & Campo
+            </a>
+            <a href="../Clientes/cliente.html" class="nav-link">
+                <i>👥 </i> Clientes
+            </a>
+             <a href="../Funcionario/Funcionario.html" class="nav-link">
+                <i>🪪</i> Funcionários
+            </a>
+        </nav>
+
+        <div class="sidebar-user">
+            <span class="avatar">👤</span>
+            <div class="user-info">
+                <b>Roberto Alencar</b>
+                <small>RH / Operações</small>
+            </div>
+            <button class="logout-btn" aria-label="Sair">→</button>
+        </div>
+
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <span>SISTEMA INTEGRADO DE ENGENHARIA & PRODUÇÃO</span>
+
+            <div class="top-actions">
+                <button class="notif-btn" aria-label="Notificações">
+                    🔔<span class="notif-dot"></span>
+                </button>
+                <span class="avatar">👤</span>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <div class="page-header-row">
+                <div class="page-heading">
+                    <span class="breadcrumb">ORÇAMENTOS TÉCNICOS</span>
+                    <h1>Orçamentos Técnicos</h1>
+                    <p>Gerencie e acompanhe todos os orçamentos técnicos, do recebimento à aprovação.</p>
+                </div>
+
+                <div class="header-actions">
+                    <button class="btn-export">⬇ Exportar relatório</button>
+                    <button class="btn-primary">+ Novo Orçamento</button>
+                </div>
+            </div>
+
+            <div class="kpi-grid">
+                <article class="kpi-card">
+                    <div class="kpi-icon blue">▤</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">TOTAL DE ORÇAMENTOS</span>
+                        <strong class="kpi-value">48</strong>
+                        <span class="kpi-sub"><b class="trend-up">↑ 12%</b> vs. mês anterior</span>
+                    </div>
+                </article>
+
+                <article class="kpi-card">
+                    <div class="kpi-icon cyan">☑</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">APROVADOS</span>
+                        <strong class="kpi-value">28</strong>
+                        <span class="kpi-sub"><b class="trend-up">↑ 18%</b> vs. mês anterior</span>
+                    </div>
+                </article>
+
+                <article class="kpi-card">
+                    <div class="kpi-icon amber">🕒</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">EM ANÁLISE</span>
+                        <strong class="kpi-value">12</strong>
+                        <span class="kpi-sub">6 aguardando retorno</span>
+                    </div>
+                </article>
+            </div>
+
+            <section class="list-panel">
+
+                <div class="panel-heading">
+                    <h2><span>▤</span> Orçamentos Técnicos Recentes</h2>
+                    <small><i></i> 48 orçamentos</small>
+                </div>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nº ORÇAMENTO</th>
+                                <th>CLIENTE / EMPREENDIMENTO</th>
+                                <th>PROJETO</th>
+                                <th>VALOR TOTAL</th>
+                                <th>STATUS</th>
+                                <th>ATUALIZADO EM</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>000482</td>
+                                <td><b>Habitarte S.A.</b><small>Ed. Mirante Sul</small></td>
+                                <td>Residencial Luxo</td>
+                                <td><b>R$ 310.000</b></td>
+                                <td><em class="done">Aprovado</em></td>
+                                <td>10/04/2025</td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td>000481</td>
+                                <td><b>Mansão Alphaville 12</b><small>Residencial Unifamiliar</small></td>
+                                <td>Alto Padrão</td>
+                                <td><b>R$ 184.500</b></td>
+                                <td><em>Em análise</em></td>
+                                <td>08/04/2025</td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td>000480</td>
+                                <td><b>Lumina Hotéis & Resort</b><small>Torre Atlântico</small></td>
+                                <td>Hotelaria / Glazing</td>
+                                <td><b>R$ 492.000</b></td>
+                                <td><em class="done">Aprovado</em></td>
+                                <td>05/04/2025</td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td>000479</td>
+                                <td><b>Vectra Incorporadora</b><small>Comercial Prime</small></td>
+                                <td>Corporativo Triplo A</td>
+                                <td><b>R$ 168.000</b></td>
+                                <td><em class="late">Reprovado</em></td>
+                                <td>03/04/2025</td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td>000478</td>
+                                <td><b>ArqStudio Arquitetura</b><small>Casa Jardins</small></td>
+                                <td>Residencial Boutique</td>
+                                <td><b>R$ 85.500</b></td>
+                                <td><em>Em revisão</em></td>
+                                <td>01/04/2025</td>
+                                <td class="arrow">›</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="panel-footer">
+                    <span class="footer-alert"><i class="dot-green"></i> Documentação técnica vinculada aos orçamentos</span>
+                    <a href="orcamentos.html" class="footer-link">Ver todos os 48 orçamentos →</a>
+                </div>
+
+            </section>
+
+            <footer class="page-bottom-bar">
+                <div class="bottom-left">
+                    <span><b class="trend-up">↑</b> Teto de desconto técnico comercial: 7,0%</span>
+                    <span>ⓘ Aprovação técnica: checklist obrigatório antes do envio</span>
+                </div>
+                <div class="bottom-right">
+                    <span class="sync-status"><i class="dot-green"></i> Sincronizado com CRM</span>
+                    <small>v2.4.8 · build</small>
+                </div>
+            </footer>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes & Carteira Comercial | S.A. Esquadrias</title>
+    <link rel="stylesheet" href="cliente.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">▤</span>
+            <span>
+                <b>S.A. ESQUADRIAS</b>
+                <small>ALUMÍNIO & GLAZING</small>
+            </span>
+        </a>
+
+        <div class="nav-caption">OPERAÇÕES ESTRUTURAIS</div>
+
+        <nav>
+          <a href="../dashboard/dashboard.html" class="nav-link">
+                <i>📊</i> Dashboard Geral
+            </a>
+            <a href="../orçamento/orcamento.html" class="nav-link">
+                <i>📑</i> Orçamentos Técnicos
+            </a>
+            <a href="../Prazos-Fabricas/prazo.html" class="nav-link">
+                <i>⚙️</i> Controle de Prazos & Fábrica
+            </a>
+            <a href="../Instalações/instalacao.html" class="nav-link">
+                <i>📍</i> Instalações & Campo
+            </a>
+            <a href="../Clientes/cliente.html" class="nav-link active">
+                <i>👥 </i> Clientes
+            </a>
+             <a href="../Funcionario/Funcionario.html" class="nav-link">
+                <i>🪪</i> Funcionários
+            </a>
+        </nav>
+
+        <div class="sidebar-user">
+            <span class="avatar">👤</span>
+            <div class="user-info">
+                <b>Roberto Alencar</b>
+                <small>RH / Operações</small>
+            </div>
+            <button class="logout-btn" aria-label="Sair">→</button>
+        </div>
+
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <span>SISTEMA INTEGRADO DE ENGENHARIA & PRODUÇÃO</span>
+
+            <div class="top-actions">
+                <button class="notif-btn" aria-label="Notificações">
+                    🔔<span class="notif-dot"></span>
+                </button>
+                <span class="avatar">👤</span>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <div class="page-header-row">
+                <div class="page-heading">
+                    <span class="breadcrumb">CLIENTES & CARTEIRA COMERCIAL</span>
+                    <h1>Clientes & Carteira Comercial</h1>
+                    <p>Engenharia de fachadas, esquadrias, estruturas e homologação corporativa.</p>
+                </div>
+
+                <div class="header-actions">
+                    <button class="btn-export">⬇ Exportar DRE</button>
+                    <button class="btn-primary">+ Novo Cliente / Construtora</button>
+                </div>
+            </div>
+
+            <div class="kpi-grid">
+                <article class="kpi-card">
+                    <div class="kpi-icon blue">👥</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">VENDAS NO MÊS</span>
+                        <div class="kpi-inline">
+                            <strong class="kpi-value">R$ 1.240.000</strong>
+                            <span class="kpi-sub"><b class="trend-up">↑ 82%</b> meta</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="kpi-card">
+                    <div class="kpi-icon cyan">▤</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">CONSULTORES ATIVOS</span>
+                        <div class="kpi-inline">
+                            <strong class="kpi-value">08</strong>
+                            <span class="kpi-sub">credenciados CREA</span>
+                        </div>
+                        <span class="kpi-sub">100% alocado fabril</span>
+                    </div>
+                </article>
+
+                <article class="kpi-card">
+                    <div class="kpi-icon amber">🏢</div>
+                    <div class="kpi-data">
+                        <span class="kpi-label">CONTAS HOMOLOGADAS</span>
+                        <div class="kpi-inline">
+                            <strong class="kpi-value">142</strong>
+                            <span class="kpi-sub"><b class="trend-up">↑ +6</b> este mês</span>
+                        </div>
+                        <span class="kpi-sub">Construtoras & Studios</span>
+                    </div>
+                </article>
+            </div>
+
+            <section class="list-panel">
+
+                <div class="panel-heading">
+                    <h2><span>👥</span> Clientes Corporativos & Contratos Recentes</h2>
+                </div>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>CLIENTE / EMPREENDIMENTO</th>
+                                <th>SEGMENTO</th>
+                                <th>CONSULTOR</th>
+                                <th>VOL. (M²)</th>
+                                <th>VALOR TOTAL</th>
+                                <th>ETAPA FÁBRICA</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Habitarte S.A.</b><small>Ed. Mirante Sul</small></td>
+                                <td>Residencial Luxo</td>
+                                <td>R. Peixoto</td>
+                                <td>360 m²</td>
+                                <td><b>R$ 310.000</b></td>
+                                <td><em>Corte CNC</em></td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td><b>Mansão Alphaville 12</b><small>Residencial Unifamiliar</small></td>
+                                <td>Alto Padrão</td>
+                                <td>M. Silveira</td>
+                                <td>195 m²</td>
+                                <td><b>R$ 184.500</b></td>
+                                <td><em>Usinagem</em></td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td><b>Lumina Hotéis & Resort</b><small>Torre Atlântico</small></td>
+                                <td>Hotelaria / Glazing</td>
+                                <td>R. Peixoto</td>
+                                <td>540 m²</td>
+                                <td><b>R$ 492.000</b></td>
+                                <td><em class="amber">Montagem</em></td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td><b>Vectra Incorporadora</b><small>Comercial Prime</small></td>
+                                <td>Corporativo Triplo A</td>
+                                <td>C. Mendes</td>
+                                <td>220 m²</td>
+                                <td><b>R$ 168.000</b></td>
+                                <td><em class="neutral">Expedição</em></td>
+                                <td class="arrow">›</td>
+                            </tr>
+                            <tr>
+                                <td><b>ArqStudio Arquitetura</b><small>Casa Jardins</small></td>
+                                <td>Residencial Boutique</td>
+                                <td>J. Ferreira</td>
+                                <td>98 m²</td>
+                                <td><b>R$ 85.500</b></td>
+                                <td><em>Corte CNC</em></td>
+                                <td class="arrow">›</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="panel-footer">
+                    <span class="footer-alert"><i class="dot-green"></i> Linhas em conformidade técnica de montagem</span>
+                    <a href="clientes.html" class="footer-link">Ver todas as 142 construtoras →</a>
+                </div>
+
+            </section>
+
+            <footer class="page-bottom-bar">
+                <div class="bottom-left">
+                    <span><b class="trend-up">↑</b> Teto de Desconto Técnico Comercial: <b>7,0%</b></span>
+                    <span>ⓘ Homologação e Ancoragem: <b>NBR 10.821 & NBR 7199</b></span>
+                </div>
+                <div class="bottom-right">
+                    <span class="sync-status"><i class="dot-green"></i> Sincronizado com PCP Fábrica</span>
+                </div>
+            </footer>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

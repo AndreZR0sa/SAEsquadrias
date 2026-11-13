@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários | S.A. Esquadrias</title>
+    <link rel="stylesheet" href="Funcionario.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">▤</span>
+            <span>
+                <b>S.A. ESQUADRIAS</b>
+                <small>ALUMÍNIO & GLAZING</small>
+            </span>
+        </a>
+
+        <div class="nav-caption">OPERAÇÕES ESTRUTURAIS</div>
+
+        <nav>
+            <a href="../dashboard/dashboard.html" class="nav-link">
+                <i>📊</i> Dashboard Geral
+            </a>
+            <a href="../orçamento/orcamento.html" class="nav-link">
+                <i>📑</i> Orçamentos Técnicos
+            </a>
+            <a href="../Prazos-Fabricas/prazo.html" class="nav-link">
+                <i>⚙️</i> Controle de Prazos & Fábrica
+            </a>
+            <a href="../Instalações/instalacao.html" class="nav-link">
+                <i>📍</i> Instalações & Campo
+            </a>
+            <a href="../Clientes/cliente.html" class="nav-link">
+                <i>👥 </i> Clientes
+            </a>
+             <a href="../Funcionario/Funcionario.html" class="nav-link active">
+                <i>🪪</i> Funcionários
+            </a>
+        </nav>
+
+        <div class="sidebar-user">
+            <span class="avatar">👤</span>
+            <div class="user-info">
+                <b>Roberto Alencar</b>
+                <small>RH / Operações</small>
+            </div>
+            <button class="logout-btn" aria-label="Sair">→</button>
+        </div>
+
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <span>SISTEMA INTEGRADO DE ENGENHARIA & PRODUÇÃO</span>
+
+            <div class="top-actions">
+                <button class="notif-btn" aria-label="Notificações">
+                    🔔<span class="notif-dot"></span>
+                </button>
+                <span class="avatar">👤</span>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <div class="page-header-row">
+                <div class="page-heading">
+                    <span class="breadcrumb">FUNCIONÁRIOS</span>
+                    <h1>Funcionários</h1>
+                    <p>Gerencie a equipe da empresa, visualize dados, cargos e permissões de acesso.</p>
+                </div>
+
+                <div class="header-actions">
+                    <button class="btn-primary">+ Novo Funcionário</button>
+                </div>
+            </div>
+
+            <div class="filter-bar-standalone">
+                <div class="search-box">
+                    <span>🔍</span>
+                    <input type="text" placeholder="Buscar por nome, cargo ou matrícula...">
+                </div>
+                <button class="btn-filter-select">Todos os cargos ⌄</button>
+                <button class="btn-filter">⧩ Filtrar</button>
+            </div>
+
+            <section class="list-panel">
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>NOME</th>
+                                <th>CARGO</th>
+                                <th>EQUIPE</th>
+                                <th>STATUS</th>
+                                <th class="actions-col">AÇÕES</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">MS</span>
+                                        <div>
+                                            <b>Matheus Silva</b>
+                                            <small>#001</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Montante</em></td>
+                                <td>Campo</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">RS</span>
+                                        <div>
+                                            <b>Rafael Souza</b>
+                                            <small>#002</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Montante</em></td>
+                                <td>Produção</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">AL</span>
+                                        <div>
+                                            <b>Ana Lima</b>
+                                            <small>#003</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Administrativo</em></td>
+                                <td>Escritório</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">CP</span>
+                                        <div>
+                                            <b>Carlos Pereira</b>
+                                            <small>#004</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Administrativo</em></td>
+                                <td>Gestão</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">JF</span>
+                                        <div>
+                                            <b>Juliana Ferreira</b>
+                                            <small>#005</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Vendedor</em></td>
+                                <td>Comercial</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">BR</span>
+                                        <div>
+                                            <b>Bruno Rocha</b>
+                                            <small>#006</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Montante</em></td>
+                                <td>Campo</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">LT</span>
+                                        <div>
+                                            <b>Lucas Torres</b>
+                                            <small>#007</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Vendedor</em></td>
+                                <td>Comercial</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">FS</span>
+                                        <div>
+                                            <b>Fernanda Santos</b>
+                                            <small>#008</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Administrativo</em></td>
+                                <td>Escritório</td>
+                                <td><em class="late">Inativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">VG</span>
+                                        <div>
+                                            <b>Victor Gomes</b>
+                                            <small>#009</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Montante</em></td>
+                                <td>Produção</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">TL</span>
+                                        <div>
+                                            <b>Tatiane Lopes</b>
+                                            <small>#010</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Vendedor</em></td>
+                                <td>Comercial</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">CA</span>
+                                        <div>
+                                            <b>Carla Almeida</b>
+                                            <small>#011</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Montante</em></td>
+                                <td>Campo</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="emp-cell">
+                                        <span class="emp-initials">PP</span>
+                                        <div>
+                                            <b>Paulo Pereira</b>
+                                            <small>#012</small>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td><em>Vendedor</em></td>
+                                <td>Comercial</td>
+                                <td><em class="done">Ativo</em></td>
+                                <td class="dots">•••</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </section>
+
+            <div class="pagination-bar">
+                <span>Mostrando 1 de 12 funcionários</span>
+                <div class="pagination-controls">
+                    <button class="page-btn" aria-label="Anterior">‹</button>
+                    <button class="page-btn active">1</button>
+                    <button class="page-btn" aria-label="Próximo">›</button>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>

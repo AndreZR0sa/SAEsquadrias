@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalações & Campo | S.A. Esquadrias</title>
+    <link rel="stylesheet" href="instalacao.css">
+</head>
+<body>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <a href="index.html" class="brand">
+            <span class="brand-icon">▤</span>
+            <span>
+                <b>S.A. ESQUADRIAS</b>
+                <small>ALUMÍNIO & GLAZING</small>
+            </span>
+        </a>
+
+        <div class="nav-caption">OPERAÇÕES ESTRUTURAIS</div>
+
+        <nav>
+          <a href="../dashboard/dashboard.html" class="nav-link">
+                <i>📊</i> Dashboard Geral
+            </a>
+            <a href="../orçamento/orcamento.html" class="nav-link">
+                <i>📑</i> Orçamentos Técnicos
+            </a>
+            <a href="../Prazos-Fabricas/prazo.html" class="nav-link">
+                <i>⚙️</i> Controle de Prazos & Fábrica
+            </a>
+            <a href="../Instalações/instalacao.html" class="nav-link active">
+                <i>📍</i> Instalações & Campo
+            </a>
+            <a href="../Clientes/cliente.html" class="nav-link">
+                <i>👥 </i> Clientes
+            </a>
+             <a href="../Funcionario/Funcionario.html" class="nav-link">
+                <i>🪪</i> Funcionários
+            </a>
+        </nav>
+
+        <div class="sidebar-user">
+            <span class="avatar">👤</span>
+            <div class="user-info">
+                <b>Roberto Alencar</b>
+                <small>RH / Operações</small>
+            </div>
+            <button class="logout-btn" aria-label="Sair">→</button>
+        </div>
+
+    </aside>
+
+    <main class="main">
+
+        <header class="topbar">
+            <span>SISTEMA INTEGRADO DE ENGENHARIA & PRODUÇÃO</span>
+
+            <div class="top-actions">
+                <button class="notif-btn" aria-label="Notificações">
+                    🔔<span class="notif-dot"></span>
+                </button>
+                <span class="avatar">👤</span>
+            </div>
+        </header>
+
+        <section class="content">
+
+            <div class="page-header-row">
+                <div class="page-heading">
+                    <span class="breadcrumb">INSTALAÇÕES & CAMPO</span>
+                    <h1>Instalações & Campo</h1>
+                    <p>Planeje as equipes, acompanhe as visitas técnicas e registre a execução em obra.</p>
+                </div>
+
+                <div class="header-actions">
+                    <button class="btn-export">📅 13–19 Abr, 2025 ⌄</button>
+                    <button class="btn-primary">+ Nova Instalação</button>
+                </div>
+            </div>
+
+            <!-- 4 CARDS DE MÉTRICAS -->
+            <div class="kpi-grid-4">
+                <article class="kpi-card compact">
+                    <span class="kpi-label">TOTAL NO MÊS</span>
+                    <div class="kpi-inline">
+                        <strong class="kpi-value">38</strong>
+                        <span class="kpi-sub">instalações</span>
+                    </div>
+                </article>
+
+                <article class="kpi-card compact">
+                    <span class="kpi-label">EM ANDAMENTO</span>
+                    <div class="kpi-inline">
+                        <strong class="kpi-value">12</strong>
+                        <span class="kpi-sub">em campo</span>
+                    </div>
+                </article>
+
+                <article class="kpi-card compact">
+                    <span class="kpi-label">AGENDADAS</span>
+                    <div class="kpi-inline">
+                        <strong class="kpi-value">07</strong>
+                        <span class="kpi-sub">esta semana</span>
+                    </div>
+                </article>
+
+                <article class="kpi-card compact">
+                    <span class="kpi-label">PENDENTES</span>
+                    <div class="kpi-inline">
+                        <strong class="kpi-value">03</strong>
+                        <span class="kpi-sub">aguardando confirmação</span>
+                    </div>
+                </article>
+            </div>
+
+            <!-- GRADE PRINCIPAL (2 COLUNAS) -->
+            <div class="field-layout">
+
+                <!-- COLUNA ESQUERDA: PROGRAMAÇÃO DE INSTALAÇÕES -->
+                <section class="list-panel">
+
+                    <div class="panel-heading">
+                        <h2>Programação de Instalações</h2>
+                        <small>06 serviços</small>
+                    </div>
+
+                    <div class="filter-bar">
+                        <div class="search-box">
+                            <span>🔍</span>
+                            <input type="text" placeholder="Buscar obra, cliente ou equipe...">
+                        </div>
+                        <button class="btn-filter-select">Todas as regiões ⌄</button>
+                        <button class="btn-filter">⧩ Filtrar</button>
+                    </div>
+
+                    <div class="table-wrap">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>DATA</th>
+                                    <th>OBRA / CLIENTE</th>
+                                    <th>EQUIPE / HORÁRIO</th>
+                                    <th>STATUS</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <span class="date-badge">
+                                            <small>SEG</small>
+                                            <b>13</b>
+                                        </span>
+                                    </td>
+                                    <td><b>Habitarte S.A.</b><small>Ed. Mirante Sul</small></td>
+                                    <td><b>Equipe Alfa · 08:00</b><small>Instalação em obra</small></td>
+                                    <td><em>Agendada</em></td>
+                                    <td class="arrow">›</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="date-badge">
+                                            <small>TER</small>
+                                            <b>14</b>
+                                        </span>
+                                    </td>
+                                    <td><b>Mansão Alphaville 12</b><small>Residencial Unifamiliar</small></td>
+                                    <td><b>Equipe Bravo · 09:30</b><small>Instalação em obra</small></td>
+                                    <td><em>Em andamento</em></td>
+                                    <td class="arrow">›</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="date-badge">
+                                            <small>QUA</small>
+                                            <b>15</b>
+                                        </span>
+                                    </td>
+                                    <td><b>Lumina Hotéis & Resort</b><small>Torre Atlântico</small></td>
+                                    <td><b>Equipe Charlie · 07:30</b><small>Instalação em obra</small></td>
+                                    <td><em>Agendada</em></td>
+                                    <td class="arrow">›</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="date-badge">
+                                            <small>QUI</small>
+                                            <b>16</b>
+                                        </span>
+                                    </td>
+                                    <td><b>Vectra Incorporadora</b><small>Comercial Prime</small></td>
+                                    <td><b>Equipe Alfa · 10:00</b><small>Instalação em obra</small></td>
+                                    <td><em class="wait">Aguardando</em></td>
+                                    <td class="arrow">›</td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="date-badge">
+                                            <small>SEX</small>
+                                            <b>17</b>
+                                        </span>
+                                    </td>
+                                    <td><b>ArqStudio Arquitetura</b><small>Casa Jardins</small></td>
+                                    <td><b>Equipe Bravo · 08:30</b><small>Instalação em obra</small></td>
+                                    <td><em class="done">Concluída</em></td>
+                                    <td class="arrow">›</td>
+                                </tr>
+                          <tr>
+                                    <td>
+                                        <span class="date-badge">
+                                            <small>SÁB</small>
+                                            <b>18</b>
+                                        </span>
+                                    </td>
+                                    <td><b>Marina Construtora</b><small>Residencial Horizonte</small></td>
+                                    <td><b>Equipe Charlie · 09:00</b><small>Instalação em obra</small></td>
+                                    <td><em>Agendada</em></td>
+                                    <td class="arrow">›</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="panel-footer">
+                        <span>Mostrando 6 de 38 instalações</span>
+                        <a href="instalacoes.html" class="footer-link">Ver agenda completa</a>
+                    </div>
+
+                </section>
+
+                <!-- COLUNA DIREITA: EQUIPES -->
+                <div class="side-column">
+                    <section class="list-panel teams-panel">
+                        <div class="panel-heading">
+                            <h2>Equipes em campo</h2>
+                            <small>3 equipes</small>
+                        </div>
+
+                        <div class="teams-list">
+                            <div class="team-item">
+                                <span class="team-badge">A</span>
+                                <div class="team-info">
+                                    <b>Equipe Alfa</b>
+                                    <small>2 visitas hoje</small>
+                                </div>
+                                <em class="done">Em campo</em>
+                            </div>
+
+                            <div class="team-item">
+                                <span class="team-badge">B</span>
+                                <div class="team-info">
+                                    <b>Equipe Bravo</b>
+                                    <small>1 visita hoje</small>
+                                </div>
+                                <em>Agendada</em>
+                            </div>
+
+                            <div class="team-item">
+                                <span class="team-badge">C</span>
+                                <div class="team-info">
+                                    <b>Equipe Charlie</b>
+                                    <small>1 visita hoje</small>
+                                </div>
+                                <em class="wait">Aguardando</em>
+                            </div>
+                        </div>
+
+                        <div class="panel-footer">
+                            <span class="footer-alert"><i class="dot-green"></i> Equipes sincronizadas com a agenda</span>
+                        </div>
+                    </section>
+
+                </div>
+
+            </div>
+
+            <footer class="page-bottom-bar">
+                <div class="bottom-left">
+                    <span class="footer-alert"><i class="dot-green"></i> Agenda atualizada há poucos minutos</span>
+                </div>
+                <div class="bottom-right">
+                    <small>v2.4.8 · build</small>
+                </div>
+            </footer>
+
+        </section>
+
+    </main>
+
+</div>
+
+</body>
+</html>
